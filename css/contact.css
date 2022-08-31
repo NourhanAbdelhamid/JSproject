@@ -1,0 +1,359 @@
+.container{
+    padding:20px ;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+
+}
+.main{
+    position: relative;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(43, 43, 42, 0.856);
+    color: white;
+    /* position: absolute; */
+    position: fixed;
+    width: 100%;
+    /* top: 0px;
+    left: 0px; */
+    z-index: 3;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hover-underline-animation:hover{
+    color: white;
+
+}
+
+li a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 21px;
+    color: rgb(180, 179, 179);
+    margin-left: 2%;
+    
+    
+}
+
+
+.hover-underline-animation ,.active{
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ce910e;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.icons{
+    display: flex;
+    text-align: center;
+    padding-right: 5%;
+
+
+}
+.icons i{
+    padding-left: 20px;
+    font-size: 30px;
+}
+.icons i:hover{
+    color: #ce910e;
+}
+
+.active{
+    color: white;
+
+}
+.active::after{
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #ce910e;
+    transform-origin: bottom right;
+    display: inline-block;
+    padding-left: 5px;
+    
+
+    transform: scaleX(1);
+
+}
+
+/*--------------form style-----------------------------*/
+
+.formDiv{
+    display: flex;
+    position: absolute;
+    /* margin-top: 6%; */
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.formDiv form{
+    background-color: rgba(17, 17, 17, 0.733);
+    padding: 10%;
+    /* width: 700px; */
+    width: 100%;
+    display: flex;
+    /* height: 60%; */
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 10%;
+    margin:auto auto;
+}
+
+.formDiv form div{
+    display: flex;
+    flex-direction: column;
+    margin:auto auto;
+
+
+}
+.formDiv form input:not([type=submit]){
+    padding: 10px;
+    height: 30px;
+    width: 400px;
+    margin: 2%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+}
+.formDiv form input:not([type=text]){
+    background-color: #ce910e;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    margin: 2%;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.formDiv form input:not([type=text]):hover{
+    background-color: rgba(0, 0, 0, 0.555);
+}
+form span{
+    display: none;
+    color: red;
+}
+.formDiv .container{
+    width: 60%;
+    height: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.formDiv form .hideMsg{
+    display: none;
+    font-size: 18px;
+    color: rgb(252, 11, 11);
+}
+.content .contentTop {
+    color: black;
+    background-color: rgb(255, 242, 184);
+    /* margin-top: 20px; */
+    /* z-index: 99; */
+    /* position: absolute;
+    bottom: -60%;
+    top: 0px;
+    left: 0px;
+    padding: 10%; */
+    word-spacing: 9px;
+}
+.content{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: -60%;
+    top: 0px;
+    left: 0px;
+    padding: 10%;
+
+}
+
+footer{
+    position: absolute;
+    bottom: -30%;
+    left: 0px;
+
+}
+footer{
+    background-color: #252525;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ourSocial{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 5% 15%;
+}
+.footerContent span{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    padding-right: 5%;
+    /* width: 90%; */
+}
+
+.footerContent button{
+    height: 40px;
+    width: 150px;
+     /* padding: 2%;  */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: #ce910e;
+
+
+
+}
+
+.footerContent{
+    display: flex;
+    justify-content: center;
+    padding: 7% 0%; 
+    justify-items: center;
+    width: 100%;
+}
+
+.footerContent button:hover{
+    background-color: #a37410;
+}
+.myName{
+    display: flex;
+    justify-content: center;
+    padding: 3% 0 0 0;
+    font-weight: 700;
+}
+
+@media  (max-width: 900px){
+    header ul li a{
+        font-size: 16px;
+    }
+    header .logo{
+        font-size: 16px;
+    }
+    header .icons i{
+        font-size: 18px;
+    }
+    header #counter{
+        font-size: 13px;
+        margin-left: -17%;
+
+    }
+
+    .formDiv form input:not([type=submit]){
+        width: 250px;
+        height: 20px;
+        margin: 1%;
+    }
+    .formDiv form input:not([type=text]){
+        padding: 6px;
+        width: 100px;
+        margin-top: 10px;
+    }
+    .formDiv form .hideMsg{
+        font-size: 14px;
+        color: rgb(252, 11, 11);
+    }
+    .content .contentTop {
+        color: black;
+        background-color: rgb(255, 242, 184);
+        /* margin-top: 20px; */
+        /* z-index: 99; */
+        /* position: absolute;
+        bottom: -70%;
+        left: 0px;
+        padding: 10%;
+        word-spacing: 9px; */
+
+    }
+    .content{
+        position: absolute;
+        bottom: -70%;
+        left: 0px;
+        padding: 10%;
+        word-spacing: 9px;
+        z-index: 4;
+        display: flex;
+    }
+    .content .contentTop{
+        width: 40%;
+
+    }
+    .content .bottomCont{
+        width: 40%;
+    }
+    .content div .myyimggg{
+        height: 400px;
+        width: 300px;
+    }
+    footer{
+        bottom: -37%;
+    
+    }
+
+}
+
+@media  (min-width: 1300){
+    footer{
+        bottom: -100%;
+    
+    }
+
+
+}
+
+
+
+

@@ -1,0 +1,325 @@
+.container{
+    padding:20px ;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+
+}
+.main{
+    position: relative;
+}
+.topp{
+    position: relative;
+    background-color: #222221;
+    height: 80px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(43, 43, 42, 0.856);
+    color: white;
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hover-underline-animation:hover{
+    color: white;
+
+}
+
+li a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 21px;
+    color: rgb(180, 179, 179);
+    margin-left: 2%;
+    
+    
+}
+
+
+.hover-underline-animation ,.active{
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ce910e;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.icons{
+    display: flex;
+    text-align: center;
+    padding-right: 5%;
+
+
+}
+.icons i{
+    padding-left: 20px;
+    font-size: 30px;
+}
+.icons i:hover{
+    color: #ce910e;
+}
+
+.active{
+    color: white;
+
+}
+.active::after{
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 2px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #ce910e;
+    transform-origin: bottom right;
+    display: inline-block;
+    padding-left: 5px;
+    
+
+    transform: scaleX(1);
+
+}
+.content{
+    background-color: #1f1f1e;
+
+}
+.content .topContent {
+    display: flex;
+    padding: 2%;
+
+}
+.content .topContent img{
+    height: 500px;
+    width: 400px;
+    margin: 5%;
+}
+.content .topContent .div2{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-items: center;
+    width: 50%;
+    margin: 5%;
+
+}
+.myAppServices .container div{
+    padding: 2%;
+    width: 25%;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+    background-color: white;
+
+}
+.content .topContent h1{
+    color: #ce910e;
+}
+
+.content .topContent p{
+    font-size: 18px;
+    color: white;
+}
+
+.myAppServices .container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.myAppServices div img{
+    height: 300px;
+    width: 100%;
+}
+
+/*----------------------footer-----------------------------*/
+footer{
+
+    background-color: #252525;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.ourSocial{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 5% 15%;
+}
+.footerContent span{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    padding-right: 5%;
+    /* width: 90%; */
+}
+
+.footerContent button{
+    height: 40px;
+    width: 150px;
+     /* padding: 2%;  */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: #ce910e;
+
+
+
+}
+
+.footerContent{
+    display: flex;
+    justify-content: center;
+    padding: 7% 0%; 
+    justify-items: center;
+    width: 100%;
+}
+
+.footerContent button:hover{
+    background-color: #a37410;
+}
+.myName{
+    display: flex;
+    justify-content: center;
+    padding: 3% 0 0 0;
+    font-weight: 700;
+}
+@media  (max-width: 1000px) {
+
+    header ul li a{
+        font-size: 16px;
+    }
+    header .logo{
+        font-size: 16px;
+    }
+    header .icons i{
+        font-size: 18px;
+    }
+    header #counter{
+        font-size: 13px;
+        margin-left: -17%;
+
+    }
+    .myText #myP{
+        width: 70%;
+        text-align: center;
+      font-size: 14px;
+      margin: 0px 20px;
+    }
+    .myText h1{
+        font-size: 30px;
+    }
+    .myText button{
+        width: 15%;
+        font-size: 14px;
+        border-radius: 7px;
+    }
+    .myText{
+        top:25%
+    }
+    .myText i{
+        font-size: 25px;
+    }
+
+    .content{
+        background-color: #1f1f1e;
+    
+    }
+    .content .topContent {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        text-align: center;
+    
+    }
+    .content .topContent img{
+        height: 500px;
+        width: 400px;
+        margin: 5%;
+
+    }
+    .content .topContent .div2{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 5%;
+        margin:  0px auto;
+        
+    
+    }
+
+    .myAppServices .container div{
+        /* padding: 1%; */
+        width: 80%;
+        /* margin: 1%; */
+        border-radius: 10px;
+        box-shadow: 5px 10px 18px #888888;
+        background-color: white;
+    
+    }
+    .content .topContent h1{
+        color: #ce910e;
+    }
+    
+    .content .topContent p{
+        font-size: 16px;
+        color: white;
+    }
+    
+    .myAppServices .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-content: center;
+        justify-items: center;
+        margin:  auto 0px;
+    
+    }
+    
+    .myAppServices div img{
+        height: 400px;
+        width: 100%;
+    }
+
+}
